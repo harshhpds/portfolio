@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint --quiet ./src",
     "preview": "vite preview",
+    "lint": "eslint --quiet ./src",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
