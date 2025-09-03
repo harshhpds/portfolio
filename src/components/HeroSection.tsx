@@ -60,7 +60,8 @@ export default function HeroSection() {
   ];
 
   const handleResumeDownload = () => {
-    window.open('https://drive.google.com/drive/folders/1xEal5LmXBPZEEbA5ObB3oSCsyIu-Su3g?usp=sharing', '_blank');
+    window.open('/Resume_Harsh_abhang_v1.1.pdf', '_blank');
+    //window.open('https://drive.google.com/drive/folders/1xEal5LmXBPZEEbA5ObB3oSCsyIu-Su3g?usp=sharing', '_blank');
   };
 
   return (
