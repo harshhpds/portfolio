@@ -22,13 +22,13 @@ interface Certificate {
 const certificates: Certificate[] = [
   {
     id: '1',
-    title: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: 'March 2024',
+    title: 'BCG - Data Science Job Simulation',
+    issuer: 'Forage',
+    date: 'August 2025',
     description: 'Comprehensive certification covering cloud architecture, security, and scalability best practices. Demonstrated expertise in designing distributed systems on AWS platform.',
     skills: ['AWS', 'Cloud Architecture', 'Security', 'Scalability'],
-    image: '/api/placeholder/400/300',
-    credentialUrl: 'https://aws.amazon.com/certification/',
+    image: '/portfolio/certificates/BCG - Data Science Job Simulation.jpg',
+    credentialUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_473gif6H5sYNp8BEq_1755446348151_completion_certificate.pdf',
     featured: true
   },
   {
