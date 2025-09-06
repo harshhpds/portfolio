@@ -70,7 +70,7 @@ export default function HeroSection() {
                   <img
                     src="/portfolio/harshlogo.jpeg"
                     alt="Harsh Abhang"
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full object-cover object-top rounded-full"
                   />
                 </div>
               </motion.div>
