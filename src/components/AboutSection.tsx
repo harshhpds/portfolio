@@ -49,7 +49,7 @@ const education = [
     highlights: [
       'Graduated with First Class with Distinction',
       'Strong foundation in Programming & Software Engineering',
-      'Active participation in coding competitions and hackathons'
+      'Active participation in coding competitions and Associations'
     ],
     gradient: 'from-cyan-500 to-blue-500'
   }
