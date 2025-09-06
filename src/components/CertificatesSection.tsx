@@ -85,6 +85,17 @@ const certificates: Certificate[] = [
     image: '/api/placeholder/400/300',
     credentialUrl: 'https://pmi.org/certifications/',
     featured: false
+  },
+  {
+    id: '7',
+    title: 'Agile Project Management',
+    issuer: 'Project Management Institute',
+    date: 'June 2023',
+    description: 'Professional certification in Agile methodologies, Scrum framework, and project management best practices.',
+    skills: ['Agile', 'Scrum', 'Project Management', 'Leadership'],
+    image: '/api/placeholder/400/300',
+    credentialUrl: 'https://pmi.org/certifications/',
+    featured: false
   }
 ];
 
