@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Download, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin, Mail, MapPin, Phone,FileText, MessageCircle, Code, Brain, Zap } from 'lucide-react';
 
 export default function HeroSection() {
   const ref = useRef(null);
@@ -31,6 +31,10 @@ export default function HeroSection() {
     }
   };
 
+  const handleResumeDownload = () => {
+    window.open('/Resume_Harsh_abhang_v1.1.pdf', '_blank');
+    //window.open('https://drive.google.com/drive/folders/1xEal5LmXBPZEEbA5ObB3oSCsyIu-Su3g?usp=sharing', '_blank');
+  };
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -155,12 +159,16 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button
-                size="lg"
-                className="bg-slate-800 hover:bg-slate-700 border-2 border-purple-500 hover:border-cyan-500 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/25 relative overflow-hidden group"
+                onClick={handleResumeDownload}
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download CV
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                />
+                <FileText className="mr-2 h-5 w-5 relative z-10" />
+                <span className="relative z-10">View Resume</span>
               </Button>
             </motion.div>
           </motion.div>
