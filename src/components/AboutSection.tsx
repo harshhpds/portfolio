@@ -30,7 +30,7 @@ const education = [
     location: 'Mumbai, India',
     duration: '2024 - Present',
     status: 'Current',
-    logo: '/api/placeholder/80/80', // VJTI logo placeholder
+    logo: '/portfolio/vjtilogo.jpg', // VJTI logo placeholder
     highlights: [
       'Specializing in AI & Machine Learning',
       'Advanced coursework in Data Structures & Algorithms',
@@ -45,7 +45,7 @@ const education = [
     duration: '2021 - 2024',
     status: 'Completed',
     cgpa: '9.3',
-    logo: '/api/placeholder/80/80', // College logo placeholder
+    logo: '/portfolio/pillailogo.jpg', // College logo placeholder
     highlights: [
       'Graduated with First Class with Distinction',
       'Strong foundation in Programming & Software Engineering',

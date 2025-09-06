@@ -20,7 +20,7 @@ const experiences = [
     skills: ["Django", "CRM Development", "Workflow Automation", "Lead Management", "Dashboard Development"],
     gradient: "from-purple-500 to-pink-500",
     icon: Rocket,
-    companyLogo: "/api/placeholder/60/60",
+    companyLogo: "porfolio/preparo-analytics-logo.png",
     metrics: { efficiency: "25%", leads: "10k+", automation: "80%" }
   },
   {
@@ -37,7 +37,7 @@ const experiences = [
     skills: ["PostgreSQL", "Django", "Database Optimization", "High-volume Data Processing", "UI/UX"],
     gradient: "from-cyan-500 to-blue-500",
     icon: Database,
-    companyLogo: "/api/placeholder/60/60",
+    companyLogo: "porfolio/hanpanlogo.png",
     metrics: { latency: "30%", records: "10k+", adoption: "40%" }
   },
   {
@@ -54,7 +54,7 @@ const experiences = [
     skills: ["Django", "OCR", "Document Processing", "REST APIs", "Test Automation"],
     gradient: "from-green-500 to-emerald-500",
     icon: Code,
-    companyLogo: "/api/placeholder/60/60",
+    companyLogo: "porfolio/hanpanlogo.png",
     metrics: { accuracy: "95%", coverage: "40%", apis: "15+" }
   },
   {
@@ -71,7 +71,7 @@ const experiences = [
     skills: ["Machine Learning", "Random Forest", "Logistic Regression", "Data Visualization", "Jupyter"],
     gradient: "from-orange-500 to-red-500",
     icon: Brain,
-    companyLogo: "/api/placeholder/60/60",
+    companyLogo: "porfolio/technooklogo.png",
     metrics: { accuracy: "85%", models: "3", insights: "50+" }
   }
 ];
