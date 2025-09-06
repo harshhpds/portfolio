@@ -44,7 +44,7 @@ const socialLinks = [
   },
   {
     icon: Linkedin,
-    label: "LinkedIn", 
+    label: "LinkedIn",
     href: "https://linkedin.com/in/harsh-abhang",
     gradient: "from-blue-600 to-blue-800",
     hoverColor: "hover:text-blue-600"
@@ -62,7 +62,7 @@ export default function ContactSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -89,23 +89,23 @@ export default function ContactSection() {
 
     try {
       await sendEmail(formData);
-      
+
       toast({
-        title: "Message Sent Successfully! ✉️",
-        description: "Thank you for reaching out. You'll receive a confirmation email, and I'll get back to you within 24 hours!",
+        title: "Message Sent Successfully",
+        description: "Thanks for reaching out! I'll get back to you within 24 hours.",
       });
-      
+
       setFormData({ name: '', email: '', subject: '', message: '' });
-      
+
     } catch (error) {
       console.error('Failed to send email:', error);
-      
+
       toast({
-        title: "Message Sent! 📧",
-        description: "Your message has been received. I'll respond soon!",
-        variant: "default"
+        title: "Failed to Send",
+        description: "Please try again later or email me directly.",
+        variant: "destructive",
       });
-      
+
       setFormData({ name: '', email: '', subject: '', message: '' });
     } finally {
       setIsSubmitting(false);
@@ -147,8 +147,8 @@ export default function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                I'm always excited to discuss new opportunities, innovative projects, or potential collaborations. 
-                Whether you're looking for an AI developer, need consultation on machine learning projects, 
+                I'm always excited to discuss new opportunities, innovative projects, or potential collaborations.
+                Whether you're looking for an AI developer, need consultation on machine learning projects,
                 or want to explore cutting-edge technologies, I'd love to hear from you.
               </p>
             </div>
@@ -247,7 +247,7 @@ export default function ContactSection() {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="subject" className="text-gray-300">Subject *</Label>
                     <Input
@@ -260,7 +260,7 @@ export default function ContactSection() {
                       className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-400"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-gray-300">Message *</Label>
                     <Textarea
@@ -274,7 +274,7 @@ export default function ContactSection() {
                       className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-purple-400 resize-none"
                     />
                   </div>
-                  
+
                   <Button
                     type="submit"
                     disabled={isSubmitting}
