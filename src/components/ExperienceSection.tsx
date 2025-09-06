@@ -39,7 +39,7 @@ const experiences = [
     gradient: "from-cyan-500 to-blue-500",
     icon: Database,
     companyLogo: "/portfolio/hanpanlogo.png",
-    campanyWebsite: 'https://www.hanpan.in/',
+    companyWebsite: 'https://www.hanpan.in/',
     metrics: { latency: "30%", records: "10k+", adoption: "40%" }
   },
   {
