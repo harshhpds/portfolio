@@ -252,8 +252,7 @@ export default function ProjectsSection() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
-
+          className="grid lg:grid-cols-1 gap-8 max-w-6xl mx-auto"
         >
           {projects.map((project, index) => (
             <motion.div
