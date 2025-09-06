@@ -25,8 +25,8 @@ const certificates: Certificate[] = [
     title: 'BCG - Data Science Job Simulation',
     issuer: 'Forage',
     date: 'August 2025',
-    description: 'Comprehensive certification covering cloud architecture, security, and scalability best practices. Demonstrated expertise in designing distributed systems on AWS platform.',
-    skills: ['AWS', 'Cloud Architecture', 'Security', 'Scalability'],
+    description: 'Completed a practical job simulation where I applied data science skills to solve real-world business problems at BCG. Tasks included data wrangling, exploratory data analysis, and generating insights for decision-making.',
+    skills: ['Data Science', 'Python', 'EDA', 'Business Analytics'],
     image: '/portfolio/certificates/BCG - Data Science Job Simulation.jpg',
     credentialUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_473gif6H5sYNp8BEq_1755446348151_completion_certificate.pdf',
     featured: true
