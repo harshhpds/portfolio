@@ -30,7 +30,7 @@ const certificates: Certificate[] = [
     image: '/portfolio/certificates/BCG - Data Science Job Simulation.jpg',
     credentialUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_473gif6H5sYNp8BEq_1755446348151_completion_certificate.pdf',
     featured: true
-  },
+  }/*,
   {
     id: '2',
     title: 'Google Cloud Professional Data Engineer',
@@ -96,7 +96,7 @@ const certificates: Certificate[] = [
     image: '/api/placeholder/400/300',
     credentialUrl: 'https://pmi.org/certifications/',
     featured: false
-  }
+  }*/
 ];
 
 export default function CertificatesSection() {
