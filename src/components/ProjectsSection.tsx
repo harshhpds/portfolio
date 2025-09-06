@@ -252,7 +252,8 @@ export default function ProjectsSection() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid lg:grid-cols-1 gap-8 max-w-6xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+
         >
           {projects.map((project, index) => (
             <motion.div
@@ -267,7 +268,8 @@ export default function ProjectsSection() {
               onHoverEnd={() => setHoveredProject(null)}
               className="group cursor-pointer"
             >
-              <Card className="bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/30 transition-all duration-500 h-full overflow-hidden relative">
+              <Card className="bg-white/5 backdrop-blur-sm border border-white/10 hover:border-purple-500/50 rounded-xl p-4 sm:p-6 md:p-8 flex flex-col h-full overflow-hidden relative">
+
                 {/* Animated border gradient */}
                 <motion.div
                   className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-lg`}
