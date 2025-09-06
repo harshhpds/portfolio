@@ -21,6 +21,7 @@ const experiences = [
     gradient: "from-purple-500 to-pink-500",
     icon: Rocket,
     companyLogo: "/portfolio/preparo-analytics-logo.png",
+    companyWebsite: 'https://thepreparo.com/',
     metrics: { efficiency: "25%", leads: "10k+", automation: "80%" }
   },
   {
@@ -38,6 +39,7 @@ const experiences = [
     gradient: "from-cyan-500 to-blue-500",
     icon: Database,
     companyLogo: "/portfolio/hanpanlogo.png",
+    campanyWebsite: 'https://www.hanpan.in/',
     metrics: { latency: "30%", records: "10k+", adoption: "40%" }
   },
   {
@@ -55,6 +57,7 @@ const experiences = [
     gradient: "from-green-500 to-emerald-500",
     icon: Code,
     companyLogo: "/portfolio/hanpanlogo.png",
+    companyWebsite: 'https://www.hanpan.in/',
     metrics: { accuracy: "95%", coverage: "40%", apis: "15+" }
   },
   {
@@ -72,6 +75,7 @@ const experiences = [
     gradient: "from-orange-500 to-red-500",
     icon: Brain,
     companyLogo: "/portfolio/technooklogo.png",
+    companyWebsite: 'https://upskill.teachnook.com/',
     metrics: { accuracy: "85%", models: "3", insights: "50+" }
   }
 ];
@@ -122,7 +126,7 @@ export default function ExperienceSection() {
     <section id="experience" className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 relative overflow-hidden">
       {/* Enhanced background decoration */}
       <div className="absolute inset-0">
-        <motion.div 
+        <motion.div
           className="absolute top-0 right-0 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
@@ -136,7 +140,7 @@ export default function ExperienceSection() {
             ease: "easeInOut"
           }}
         />
-        <motion.div 
+        <motion.div
           className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-200/20 rounded-full blur-3xl"
           animate={{
             scale: [1.1, 1, 1.1],
@@ -151,7 +155,7 @@ export default function ExperienceSection() {
             delay: 2
           }}
         />
-        <motion.div 
+        <motion.div
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-pink-200/15 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.3, 1],
@@ -214,8 +218,8 @@ export default function ExperienceSection() {
             </motion.div>
             <span className="text-purple-600 font-semibold">Professional Journey</span>
           </motion.div>
-          
-          <motion.h2 
+
+          <motion.h2
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -223,18 +227,18 @@ export default function ExperienceSection() {
           >
             Professional <span className="bg-gradient-to-r from-purple-600 to-cyan-600 bg-clip-text text-transparent">Experience</span>
           </motion.h2>
-          
-          <motion.p 
+
+          <motion.p
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.6 }}
           >
-            A journey through diverse roles in software development, machine learning, and system optimization, 
+            A journey through diverse roles in software development, machine learning, and system optimization,
             delivering measurable impact across multiple organizations.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             className="w-24 h-1 bg-gradient-to-r from-purple-600 to-cyan-600 mx-auto rounded-full mt-6"
             initial={{ width: 0 }}
             animate={isInView ? { width: 96 } : { width: 0 }}
@@ -244,14 +248,14 @@ export default function ExperienceSection() {
 
         <div className="max-w-5xl mx-auto">
           {/* Enhanced Timeline */}
-          <motion.div 
+          <motion.div
             className="relative"
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
             {/* Animated timeline line */}
-            <motion.div 
+            <motion.div
               className="absolute left-8 top-0 w-1 bg-gradient-to-b from-purple-400 via-cyan-400 to-green-400 rounded-full"
               initial={{ height: 0 }}
               animate={isInView ? { height: "100%" } : { height: 0 }}
@@ -266,7 +270,7 @@ export default function ExperienceSection() {
                 className="relative mb-16 last:mb-0 group"
               >
                 {/* Enhanced Timeline dot with company logo */}
-                <motion.div 
+                <motion.div
                   className="absolute left-4 flex items-center justify-center"
                   initial={{ scale: 0, rotate: -180 }}
                   animate={isInView ? { scale: 1, rotate: 0 } : { scale: 0, rotate: -180 }}
@@ -294,7 +298,7 @@ export default function ExperienceSection() {
                     }}
                   />
                 </motion.div>
-                
+
                 {/* Enhanced Content card */}
                 <div className="ml-28">
                   <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:transform group-hover:scale-[1.02] overflow-hidden">
@@ -314,12 +318,20 @@ export default function ExperienceSection() {
                               {exp.position}
                             </h3>
                           </div>
-                          
+
                           <div className="space-y-2 text-gray-600">
                             <div className="flex items-center space-x-2">
                               <Building className="h-4 w-4 text-purple-500" />
-                              <span className="font-semibold">{exp.company}</span>
+                              <a
+                                href={exp.companyWebsite}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-semibold text-purple-600 hover:underline"
+                              >
+                                {exp.company}
+                              </a>
                             </div>
+
                             <div className="flex items-center space-x-4">
                               <div className="flex items-center space-x-1">
                                 <Calendar className="h-4 w-4 text-cyan-500" />
@@ -332,20 +344,19 @@ export default function ExperienceSection() {
                             </div>
                           </div>
                         </div>
-                        
+
                         <div className="flex flex-col items-start lg:items-end space-y-3 mt-4 lg:mt-0">
-                          <Badge 
+                          <Badge
                             variant={exp.type === 'Current' ? 'default' : 'secondary'}
-                            className={`${
-                              exp.type === 'Current' 
-                                ? 'bg-green-500 hover:bg-green-600 text-white shadow-lg' 
+                            className={`${exp.type === 'Current'
+                                ? 'bg-green-500 hover:bg-green-600 text-white shadow-lg'
                                 : 'bg-gray-100 text-gray-700'
-                            }`}
+                              }`}
                           >
                             <TrendingUp className="h-3 w-3 mr-1" />
                             {exp.type}
                           </Badge>
-                          
+
                           {/* Key Metrics */}
                           <div className="flex flex-wrap gap-2">
                             {Object.entries(exp.metrics).map(([key, value]) => (
@@ -371,14 +382,14 @@ export default function ExperienceSection() {
                         </div>
                         <ul className="space-y-3">
                           {exp.achievements.map((achievement, idx) => (
-                            <motion.li 
-                              key={idx} 
+                            <motion.li
+                              key={idx}
                               className="flex items-start space-x-3 group/item"
                               initial={{ opacity: 0, x: -20 }}
                               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                               transition={{ delay: 1 + index * 0.2 + idx * 0.1 }}
                             >
-                              <motion.div 
+                              <motion.div
                                 className={`w-2 h-2 bg-gradient-to-r ${exp.gradient} rounded-full mt-2 flex-shrink-0`}
                                 whileHover={{ scale: 1.5 }}
                               />
@@ -402,20 +413,20 @@ export default function ExperienceSection() {
                               key={idx}
                               initial={{ opacity: 0, scale: 0, rotate: -180 }}
                               animate={isInView ? { opacity: 1, scale: 1, rotate: 0 } : { opacity: 0, scale: 0, rotate: -180 }}
-                              transition={{ 
+                              transition={{
                                 delay: 1.2 + index * 0.2 + idx * 0.05,
                                 type: "spring",
                                 stiffness: 200,
                                 damping: 10
                               }}
-                              whileHover={{ 
-                                scale: 1.1, 
+                              whileHover={{
+                                scale: 1.1,
                                 rotate: 5,
                                 boxShadow: "0 5px 15px rgba(0,0,0,0.1)"
                               }}
                             >
-                              <Badge 
-                                variant="outline" 
+                              <Badge
+                                variant="outline"
                                 className="border-purple-200 text-purple-700 hover:bg-purple-50 transition-all duration-300 cursor-default px-3 py-1"
                               >
                                 {skill}
@@ -439,7 +450,7 @@ export default function ExperienceSection() {
           transition={{ duration: 0.8, delay: 1.5 }}
           className="text-center mt-16"
         >
-          <motion.p 
+          <motion.p
             className="text-gray-600 mb-6 text-lg"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
