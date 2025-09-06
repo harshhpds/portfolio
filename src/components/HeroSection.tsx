@@ -68,7 +68,7 @@ export default function HeroSection() {
               >
                 <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/api/placeholder/160/160"
+                    src="/portfolio/harshlogo.jpeg"
                     alt="Harsh Abhang"
                     className="w-full h-full object-cover rounded-full"
                   />
