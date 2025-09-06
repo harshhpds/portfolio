@@ -20,7 +20,7 @@ const experiences = [
     skills: ["Django", "CRM Development", "Workflow Automation", "Lead Management", "Dashboard Development"],
     gradient: "from-purple-500 to-pink-500",
     icon: Rocket,
-    companyLogo: "/porfolio/preparo-analytics-logo.png",
+    companyLogo: "/portfolio/preparo-analytics-logo.png",
     metrics: { efficiency: "25%", leads: "10k+", automation: "80%" }
   },
   {
